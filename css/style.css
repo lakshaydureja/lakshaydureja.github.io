@@ -3,7 +3,7 @@ body {
   font-family: "Raleway", sans-serif;
   color: #fff;
   font-size: 16px;
-  line-height: 30px;
+  /* line-height: 30px; */
   font-weight: 300;
   position: relative;
 }
@@ -1613,6 +1613,7 @@ figure.dotted-bg:before {
 
 .contact-info-v1 .contact-info-val {
   font-size: 20px;
+  font-family: nothing;
   color: #fff;
 }
 
@@ -2102,15 +2103,3 @@ span.error {
 
 
 /* *------------------------------------------------------------------------------ */
-.red-dot {
-  color: red;
-}
-
-@font-face {
-  font-family: minecraft;
-  src: url(/font/minecraft.ttf);
-}
-@font-face {
-  font-family: nothing;
-  src: url(/font/nothing.ttf);
-}
