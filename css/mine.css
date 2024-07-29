@@ -4,11 +4,11 @@
   
   @font-face {
     font-family: minecraft;
-    src: url(/font/minecraft.ttf);
+    src: url(font/minecraft.ttf);
   }
   @font-face {
     font-family: nothing;
-    src: url(/font/nothing.ttf);
+    src: url(font/nothing.ttf);
   }
   
   
