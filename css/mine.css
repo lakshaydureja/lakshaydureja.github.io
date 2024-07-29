@@ -164,5 +164,12 @@ h2 {
 
 .getintouchtext{
     font-family: minecraft;
-    font-size: 5rem;
+    font-size: 5vw;
+}
+
+@media (max-width: 480px) {
+    .getintouchtext {
+        text-align: center;
+        font-size: 2rem; /* Adjust for mobile phones */
+    }
 }
