@@ -26,6 +26,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+  <!--* nav mobile start -->
 
   <nav class="unslate_co--site-mobile-menu">
     <div class="close-wrap d-flex">
@@ -39,10 +40,10 @@
     </div>
     <div class="site-mobile-inner"></div>
   </nav>
+  <!--* nav mobile end -->
 
 
   <div class="unslate_co--site-wrap">
-
     <div class="unslate_co--site-inner">
 
       <div class="lines-wrap">
@@ -50,8 +51,10 @@
           <div class="lines"></div>
         </div>
       </div>
-      <!-- END lines -->
 
+
+
+      <!--* nav start -->
       <nav class="unslate_co--site-nav site-nav-target">
 
         <div class="container">
@@ -60,8 +63,8 @@
             <div class="col-md-5 text-right">
               <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
                 <li class="has-children">
-                  <a href="#home-section" class="nav-link">Home</a>
-                  <!-- <ul class="dropdown">
+                <a href="#home-section" class="nav-link">Home</a>
+                <!-- <ul class="dropdown">
                     <li>
                       <a href="index.html">Hero Image BG</a>
                     </li>
@@ -91,7 +94,8 @@
               <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
                 <li><a href="#skills-section" class="nav-link">Skills</a></li>
                 <!-- <li><a href="#testimonial-section" class="nav-link">Testimonial</a></li>-->
-                <li><a href="https://drive.google.com/file/d/1fMuIy89zi_mKQjG8B-YFA49GhdnKhTQ-/view" class="nav-link" target="_blank">Resume</a></li> 
+                <li><a href="https://drive.google.com/file/d/1fMuIy89zi_mKQjG8B-YFA49GhdnKhTQ-/view" class="nav-link"
+                    target="_blank">Resume</a></li>
                 <li><a href="#contact-section" class="nav-link">Contact</a></li>
               </ul>
 
@@ -104,7 +108,10 @@
         </div>
 
       </nav>
-      <!-- END nav -->
+      <!--* nav start -->
+
+
+      <!--* screen 1 start  -->
 
       <div class="cover-v1 jarallax" style="background-image: url('images/pic_cover2.jpg');" id="home-section">
         <div class="container">
@@ -120,7 +127,6 @@
           </div>
         </div>
 
-
         <a href="#portfolio-section" class="mouse-wrap smoothscroll">
           <span class="mouse">
             <span class="scroll"></span>
@@ -129,9 +135,10 @@
         </a>
 
       </div>
-      <!-- END .cover-v1 -->
+      <!--* screen 1 end  -->
 
-      <!-- PROJECTS Section -->
+
+      <!--* PROJECTS Section start -->
 
       <div class="unslate_co--section" id="portfolio-section">
         <div class="container">
@@ -289,7 +296,7 @@
 
           <!-- !  PROJECTS -->
           <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Projects</span></h2>
+            <h2 class="heading-h2 text-center divider nothing"><span class="gsap-reveal">Projects</span></h2>
             <span class="gsap-reveal">
               <img src="images/divider.png" alt="divider" width="76">
             </span>
@@ -300,16 +307,18 @@
 
             <div class="project gsap-reveal">
               <div class="project-image">
-                <img src="images/projectsImgs/sargam1.png" alt="Project 1 Image">
+                <img src="images/projectsImgs/savera.png" alt="Project 1 Image">
               </div>
               <div class="project-details">
-                <h2>Project 1</h2>
+                <h2 class="minecraft">Savera App</h2>
                 <p class="project-description">
-                  Lorem Ipsum is simply dummy text of the um has be tookand scrambled it to make a type specimen book.
-                  It has survived not only five centuries, but also the leap into electronic typesetting
+                  An Android app for an NGO school, streamlining teacher operations, student records, 
+                  and group messaging, with features for digital syllabus logs and precise, location-based attendance tracking.
                 </p>
-                <button class="btn btn-outline-pill btn-custom-light" onclick="showModal('project1-modal')">Read
-                  More</button>
+                <!-- <button class="btn btn-outline-pill btn-custom-light" >Read
+                  More</button> -->
+                  <a href="https://lapis-cloud-35e.notion.site/Savera-App-Revolutionizing-Teacher-Management-8eb2097464d64473b9d317f68c26c953?pvs=4" class="btn btn-outline-pill btn-custom-light">Read More</a>
+
               </div>
             </div>
 
@@ -318,85 +327,27 @@
                 <img src="images/projectsImgs/sargam1.png" alt="Project 2 Image">
               </div>
               <div class="project-details">
-                <h2>Project 2</h2>
+                <h2 class="minecraft">Sargam website</h2>
                 <p class="project-description">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                   industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                   scrambled it to make a type specimen bookronic typesetting
                 </p>
-                <button class="btn btn-outline-pill btn-custom-light" onclick="showModal('project2-modal')">Read
+                <button class="btn btn-outline-pill btn-custom-light" >Read
                   More</button>
               </div>
 
             </div>
           </div>
 
-          <!-- Modal for Project 1 -->
-          <div id="project1-modal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal('project1-modal')">&times;</span>
-              <h2 class="text-center">Project 1</h2>
-              <br>
-              <div class="modal-body">
-                <img src="images/projectsImgs/sargam1.png" alt="Project 1 Image">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at ultricies libero. Sed non risus
-                  dui.</p>
-                <p>Vivamus cursus lectus ut justo vehicula, at dictum nisl posuere.</p>
-                <p>Suspendisse potenti. Cras vehicula mi a velit dictum, sit amet cursus sapien vehicula.</p>
-                <p>Aenean ut elit ut elit sagittis consequat.</p>
-                <h3>Key Points:</h3>
-                <ul>
-                  <li>Key point 1</li>
-                  <li>Key point 2</li>
-                  <li>Key point 3</li>
-                  <li>Key point 4</li>
-                </ul>
-                <h3>Technologies Used:</h3>
-                <p>Technology 1, Technology 2, Technology 3</p>
-                <div class="modal-buttons">
-                  <a href="link/to/code" class="read-more-button">Code</a>
-                  <a href="link/to/live/project" class="read-more-button">Live Project</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        
 
-          <!-- Modal for Project 2 -->
-          <div id="project2-modal" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal('project2-modal')">&times;</span>
-              <h2 class="text-center">Project 2</h2>
-              <br>
-              <div class="modal-body">
-                <img src="images/projectsImgs/sargam1.png" alt="Project 2 Image">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at ultricies libero. Sed non risus
-                  dui.</p>
-                <p>Vivamus cursus lectus ut justo vehicula, at dictum nisl posuere.</p>
-                <p>Suspendisse potenti. Cras vehicula mi a velit dictum, sit amet cursus sapien vehicula.</p>
-                <p>Aenean ut elit ut elit sagittis consequat.</p>
-                <h3>Key Points:</h3>
-                <ul>
-                  <li>Key point 1</li>
-                  <li>Key point 2</li>
-                  <li>Key point 3</li>
-                  <li>Key point 4</li>
-                </ul>
-                <h3>Technologies Used:</h3>
-                <p>Technology 1, Technology 2, Technology 3</p>
-                <div class="modal-buttons">
-                  <a href="link/to/code" class="read-more-button">Code</a>
-                  <a href="link/to/live/project" class="read-more-button">Live Project</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ! -->
 
         </div>
       </div>
+      <!--* PROJECTS Section end -->
 
-      <!-- LOGO Section -->
+      <!--! LOGO Section -->
       <!-- <div class="unslate_co--section">
         <div class="container">
           <div class="owl-carousel logo-slider">
@@ -416,7 +367,7 @@
         </div>
       </div> -->
 
-      <!-- ABOUT Section -->
+      <!--* ABOUT Section start-->
       <div class="unslate_co--section" id="about-section">
         <div class="container">
 
@@ -448,162 +399,194 @@
           </div>
         </div>
       </div>
+      <!--* ABOUT Section end-->
 
 
-  <!-- SKILLS Section -->
-
-  <div class="unslate_co--section section-counter" id="skills-section">
-    <div class="container">
-      <div class="section-heading-wrap text-center mb-5">
-        <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Skills</span></h2>
-        <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-      </div>
-
+      <!--* SKILLS Section start -->
+      <div class="unslate_co--section section-counter" id="skills-section">
+        <div class="container">
+          <div class="section-heading-wrap text-center mb-5">
+            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Skills</span></h2>
+            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
+          </div>
 
 
-      <!-- Android -->
-      <div class="section-heading-wrap text-center mb-5">
-        <h3 class="heading-h3 text-center divider"><span class="gsap-reveal">Android</span></h3>
-        <!-- <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span> -->
-      </div>
 
-      <div class="row pt-5">
-        <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-          <div class="counter-v1 text-center">
-            <span class="number-wrap">
-              <!-- <span class="number number-counter" data-number="90">0</span>
+          <!--? Android -->
+          <div class="section-heading-wrap text-center mb-5">
+            <h3 class="heading-h3 text-center divider nothing"><span class="gsap-reveal">Android</span></h3>
+            <!-- <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span> -->
+          </div>
+
+          <div class="row pt-5">
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 py-2" data-aos="fade-up" data-aos-delay="0">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <!-- <span class="number number-counter" data-number="90">0</span>
               <span class="append-text">%</span> -->
-              <img src="images/icons/js.png" height="100rem" width="100rem">
-            </span>
-            <span class="counter-label">Javascript</span>
+                  <img src="images/icons/kotlin.png" height="80rem" width="80rem">
+                </span>
+                <span class="counter-label">Kotlin</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 py-2" data-aos="fade-up" data-aos-delay="100">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <img src="images/icons/jetpack.png" height="100rem" width="100rem">
+                </span>
+                <span class="counter-label">Jetpack Compose</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 py-2" data-aos="fade-up" data-aos-delay="200">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <img src="images/icons/firebase.png" height="100rem" width="100rem">
+                </span>
+                <span class="counter-label">Firebase</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 py-2" data-aos="fade-up" data-aos-delay="300">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <img src="images/icons/xml.png" height="100rem" width="100rem">
+                </span>
+                <span class="counter-label">xml</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-          <div class="counter-v1 text-center">
-            <span class="number-wrap">
-              <img src="images/icons/js.png" height="100rem" width="100rem">
-            </span>
-            <span class="counter-label">HTML/CSS</span>
+          <br>
+
+          <div class="centered-paragraph">
+            Coroutines, MVVM, Retrofit, RoomDB
           </div>
-        </div>
-        <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-          <div class="counter-v1 text-center">
-            <span class="number-wrap">
-              <img src="images/icons/js.png" height="100rem" width="100rem">
-            </span>
-            <span class="counter-label">jQuery</span>
+
+
+
+          <br><br><br>
+
+          <!--? WEB -->
+          <div class="section-heading-wrap text-center mb-5">
+            <h3 class="heading-h3 text-center divider nothing"><span class="gsap-reveal">Web Development</span></h3>
+            <!-- <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span> -->
           </div>
-        </div>
-        <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-          <div class="counter-v1 text-center">
-            <span class="number-wrap">
-              <img src="images/icons/js.png" height="100rem" width="100rem">
-            </span>
-            <span class="counter-label">Design</span>
+
+          <div class="row pt-5">
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 py-2" data-aos="fade-up" data-aos-delay="0">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <!-- <span class="number number-counter" data-number="90">0</span>
+                  <span class="append-text">%</span> -->
+                  <img src="/images/icons/html.png" height="100rem" width="100rem">
+                </span>
+                <span class="counter-label">HTML</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 py-2" data-aos="fade-up" data-aos-delay="100">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <img src="/images/icons/css.png" height="100rem" width="100rem">
+                </span>
+                <span class="counter-label">CSS</span>
+              </div>
+            </div>
+
+
+
+
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 py-2" data-aos="fade-up" data-aos-delay="200">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <img src="/images/icons/js.png" height="100rem" width="100rem">
+                </span>
+                <span class="counter-label">Javascript</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 py-2" data-aos="fade-up" data-aos-delay="300">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <img src="/images/icons/bootstrap.png" height="100rem" width="100rem">
+                </span>
+                <span class="counter-label">bootstrap</span>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 py-2"  data-aos="fade-up" data-aos-delay="300">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <img src="/images/icons/react.png" height="100rem" width="100rem">
+                </span>
+                <span class="counter-label">React + Next.js</span>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 py-2" data-aos="fade-up" data-aos-delay="300">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <img src="/images/icons/node.png" height="100rem" width="100rem">
+                </span>
+                <span class="counter-label">Node.js</span>
+              </div>
+            </div>
+
+
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 py-2" data-aos="fade-up" data-aos-delay="300">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <img src="/images/icons/ejs.png" height="100rem" width="100rem">
+                </span>
+                <span class="counter-label">ejs</span>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 py-2" data-aos="fade-up" data-aos-delay="300">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <img src="/images/icons/mongodb.png" height="100rem" width="100rem">
+                </span>
+                <span class="counter-label">Mongo db</span>
+              </div>
+            </div>
+
           </div>
+          <br>
+          <div class="centered-paragraph">
+            jQuery, WebSockets (Socket.io), WebRTC
+          </div>
+          <br><br><br>
+
+
+          <!--?others  -->
+          <div class="section-heading-wrap text-center mb-5 nothing">
+            <h3 class="heading-h3 text-center divider "><span class="gsap-reveal">Other skills
+              </span></h3>
+            <!-- <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span> -->
+          </div>
+
+          <!-- <div class="row pt-5">
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <span class="number number-counter" data-number="90">0</span>
+                  <span class="append-text">%</span>
+                </span>
+                <span class="counter-label">Javascript</span>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="centered-paragraph">
+            Data Structures and Algorithms, C++, Git & GitHub, OOPs, DBMS, Computer Architecture, Microsoft Azure, Docker        
+           </div>
+
+
         </div>
       </div>
-      <br><br><br>
-
-      <!-- WEB -->
-      <div class="section-heading-wrap text-center mb-5">
-        <h3 class="heading-h3 text-center divider"><span class="gsap-reveal">Web Development</span></h3>
-        <!-- <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span> -->
-      </div>
-
-      <div class="row pt-5">
-        <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-          <div class="counter-v1 text-center">
-            <span class="number-wrap">
-              <!-- <span class="number number-counter" data-number="90">0</span>
-      <span class="append-text">%</span> -->
-              <img src="/images/icons/js.png" height="100rem" width="100rem">
-            </span>
-            <span class="counter-label">Javascript</span>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-          <div class="counter-v1 text-center">
-            <span class="number-wrap">
-              <img src="/images/icons/js.png" height="100rem" width="100rem">
-            </span>
-            <span class="counter-label">HTML/CSS</span>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-          <div class="counter-v1 text-center">
-            <span class="number-wrap">
-              <img src="/images/icons/js.png" height="100rem" width="100rem">
-            </span>
-            <span class="counter-label">jQuery</span>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-          <div class="counter-v1 text-center">
-            <span class="number-wrap">
-              <img src="/images/icons/js.png" height="100rem" width="100rem">
-            </span>
-            <span class="counter-label">Design</span>
-          </div>
-        </div>
-      </div>
-
-      <br><br><br>
-
-
-      <!--others  -->
-      <div class="section-heading-wrap text-center mb-5">
-        <h3 class="heading-h3 text-center divider"><span class="gsap-reveal">Miscellaneous
-          </span></h3>
-        <!-- <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span> -->
-      </div>
-
-      <div class="row pt-5">
-        <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-          <div class="counter-v1 text-center">
-            <span class="number-wrap">
-              <!-- <span class="number number-counter" data-number="90">0</span>
-      <span class="append-text">%</span> -->
-              <img src="/images/icons/js.png" height="100rem" width="100rem">
-            </span>
-            <span class="counter-label">Javascript</span>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-          <div class="counter-v1 text-center">
-            <span class="number-wrap">
-              <img src="/images/icons/js.png" height="100rem" width="100rem">
-            </span>
-            <span class="counter-label">HTML/CSS</span>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-          <div class="counter-v1 text-center">
-            <span class="number-wrap">
-              <img src="/images/icons/js.png" height="100rem" width="100rem">
-            </span>
-            <span class="counter-label">jQuery</span>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-          <div class="counter-v1 text-center">
-            <span class="number-wrap">
-              <img src="/images/icons/js.png" height="100rem" width="100rem">
-            </span>
-            <span class="counter-label">Design</span>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-  <!-- END skills -->
+      <!--* SKILLS Section end -->
 
 
 
-      <!-- SOME THING MORE Section -->
-      <!-- in this add things like avivements and vouletering dcrust odc, etc, etc. -->
+      <!--* SOME THING MORE Section start-->
+      <!--? in this add things like avivements and vouletering dcrust odc, etc, etc. -->
       <div class="unslate_co--section" id="services-section">
         <div class="container">
 
@@ -672,9 +655,10 @@
           </div>
         </div>
       </div>
+      <!--* SOME THING MORE Section end-->
 
-    
 
+      <!--* start testimonial -->
       <!-- <div class="unslate_co--section" id="testimonial-section">
         <div class="container">
           <div class="section-heading-wrap text-center mb-5">
@@ -738,8 +722,9 @@
         </div>
 
       </div> -->
-      <!-- END testimonial -->
+      <!--* END testimonial -->
 
+      <!--* start Journal section -->
       <!-- <div class="unslate_co--section" id="journal-section">
         <div class="container">
           <div class="section-heading-wrap text-center mb-5">
@@ -819,9 +804,9 @@
 
         </div>
       </div> -->
-      <!-- END blog posts -->
+      <!--* end Journal section -->
 
-
+      <!--* start Contact section -->
       <div class="unslate_co--section" id="contact-section">
         <div class="container">
           <div class="section-heading-wrap text-center mb-5">
@@ -889,8 +874,10 @@
           </div>
         </div>
       </div>
-    </div> <!-- END .unslate_co-site-inner -->
+    </div>
+    <!--* end contact section -->
 
+    <!-- * FOOTER -->
     <footer class="unslate_co--footer unslate_co--section">
       <div class="container">
         <div class="row justify-content-center">
@@ -899,11 +886,11 @@
             <div class="footer-site-logo"><a href="#">Lakshay<span>.</span></a></div>
 
             <ul class="footer-site-social">
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Github</a></li>
-              <li><a href="#">Leetcode</a></li>
-              <li><a href="#">Spotify</a></li>
+              <li><a href="https://www.linkedin.com/in/lakshaydureja/">LinkedIn</a></li>
+              <li><a href="https://x.com/Lakshaaayyy">Twitter</a></li>
+              <li><a href="https://github.com/lakshaydureja">Github</a></li>
+              <li><a href="https://leetcode.com/u/lakshaydureja7/">Leetcode</a></li>
+              <li><a href="https://open.spotify.com/user/uicia1rsf60ihftg02q17isq5?si=e2767eaa79834f61">Spotify</a></li>
             </ul>
 
             <!-- <p class="site-copyright">
@@ -919,8 +906,6 @@
         </div>
       </div>
     </footer>
-
-
   </div>
 
 

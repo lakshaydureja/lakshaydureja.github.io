@@ -1131,22 +1131,6 @@ a, a:hover {
   color: #fff;
 }
 
-.heading-h2 {
-  font-size: 32px;
-  color: #fff;
-  font-weight: 900;
-}
-
-.heading-h2.divider:before {
-  position: absolute;
-  content: "";
-}
-
-.heading-h3 {
-  font-size: 26px;
-  font-weight: 900;
-  color: #fff;
-}
 
 .lead {
   font-size: 18px;

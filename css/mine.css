@@ -10,8 +10,34 @@
     font-family: nothing;
     src: url(font/nothing.ttf);
   }
+
+  .minecraft{
+    font-family: minecraft;
+  }
+  .nothing{
+    font-family: nothing;
+  }
   
+
+  /*? ============================= */
   
+.heading-h2 {
+    font-size: 32px;
+    color: #fff;
+    font-family: nothing;
+    font-weight: 900;
+  }
+  
+  .heading-h2.divider:before {
+    position: absolute;
+    content: "";
+  }
+  
+  .heading-h3 {
+    font-size: 26px;
+    font-weight: 900;
+    color: #fff;
+  }
   /* ________________________________ */
   .project-section {
     display: flex;
@@ -170,6 +196,15 @@ h2 {
 @media (max-width: 480px) {
     .getintouchtext {
         text-align: center;
-        font-size: 2rem; /* Adjust for mobile phones */
+        font-size: 2rem; 
     }
+}
+
+.centered-paragraph {
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    /* font-weight: bold; */
+    font-size: 1.5rem; 
+    margin: 20px; 
+    color: white;
 }
