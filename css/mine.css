@@ -154,3 +154,24 @@ h2 {
 .grey-warning{
     color:grey;
 }
+
+.image-link img {
+    height: auto;
+    width: 2.5rem;
+    border: none; /* Remove default border */
+    display: inline-block; /* Remove extra space below image */
+    cursor: pointer; /* Change cursor to pointer */
+   
+
+}
+.image-link img:hover {
+    animation: shake 0.5s ease; /* Apply shake animation on hover */
+
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
