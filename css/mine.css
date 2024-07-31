@@ -1,180 +1,222 @@
 .red-dot {
-    color: red;
-  }
-  
-  @font-face {
-    font-family: minecraft;
-    src: url(font/minecraft.ttf);
-  }
-  @font-face {
-    font-family: nothing;
-    src: url(font/nothing.ttf);
-  }
+  color: red;
+}
 
-  .minecraft{
-    font-family: minecraft;
-  }
-  .nothing{
-    font-family: nothing;
-  }
-  
+@font-face {
+  font-family: minecraft;
+  src: url(font/minecraft.ttf);
+}
+@font-face {
+  font-family: nothing;
+  src: url(font/nothing.ttf);
+}
 
-  /*? ============================= */
-  
+.minecraft {
+  font-family: minecraft;
+}
+.nothing {
+  font-family: nothing;
+}
+
+/*? ============================= */
+
 .heading-h2 {
-    font-size: 32px;
-    color: #fff;
-    font-family: nothing;
-    font-weight: 900;
-  }
-  
-  .heading-h2.divider:before {
-    position: absolute;
-    content: "";
-  }
-  
-  .heading-h3 {
-    font-size: 26px;
-    font-weight: 900;
-    color: #fff;
-  }
-  /* ________________________________ */
-  .project-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  font-size: 32px;
+  color: #fff;
+  font-family: nothing;
+  font-weight: 900;
+}
+
+.heading-h2.divider:before {
+  position: absolute;
+  content: "";
+}
+
+.heading-h3 {
+  font-size: 26px;
+  font-weight: 900;
+  color: #fff;
+}
+/* ________________________________ */
+.project-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 .project {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin-bottom: 40px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
 }
 
 .project.reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .project img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
 }
 
-.project-image, .project-details {
-    width: 50%;
-    padding: 20px;
-    box-sizing: border-box;
+.project-image,
+.project-details {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 .project-description {
-    max-width: 80%;
-    margin-bottom: 20px;
-    max-width: 100%; /* Ensure full width usage */
-    margin-bottom: 20px;
-    text-align: justify; 
-    /* text-align-last: justify; */
-
+  max-width: 80%;
+  margin-bottom: 20px;
+  max-width: 100%; /* Ensure full width usage */
+  margin-bottom: 20px;
+  text-align: justify;
+  /* text-align-last: justify; */
 }
 
-
 h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .read-more-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 6px 15px;
-    color: #000000;
-    background-color: transparent;
-    border: 1px solid #000000;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-    cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 15px;
+  color: #000000;
+  background-color: transparent;
+  border: 1px solid #000000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
 }
 
 .read-more-button:hover {
-    background-color: #000000;
-    color: #120f0f;
+  background-color: #000000;
+  color: #120f0f;
 }
-
-
 
 @media (max-width: 768px) {
-    .project {
-        flex-direction: column;
-    }
+  .project {
+    flex-direction: column;
+  }
 
-    .project.reverse {
-        flex-direction: column;
-    }
+  .project.reverse {
+    flex-direction: column;
+  }
 
-    .project-image, .project-details {
-        width: 100%;
-        text-align: center;
-    }
+  .project-image,
+  .project-details {
+    width: 100%;
+    text-align: center;
+  }
 
-    .project-details {
-        padding: 10px;
-    }
-    .project-description {
-        text-align: center;
-    }
-    .live-link{
-        margin-top: 1rem;
-    }
+  .project-details {
+    padding: 10px;
+  }
+  .project-description {
+    text-align: center;
+  }
+  .live-link {
+    margin-top: 1rem;
+  }
 }
 
-
-.getintouchtext{
-    font-family: minecraft;
-    font-size: 5vw;
+.getintouchtext {
+  font-family: minecraft;
+  font-size: 5vw;
 }
 
 @media (max-width: 480px) {
-    .getintouchtext {
-        text-align: center;
-        font-size: 2rem; 
-    }
+  .getintouchtext {
+    text-align: center;
+    font-size: 2rem;
+  }
 }
 
 .centered-paragraph {
-    text-align: center;
-    font-family:'Courier New', Courier, monospace;
-    /* font-weight: bold; */
-    font-size: 1.5rem; 
-    margin: 20px; 
-    color: white;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  /* font-weight: bold; */
+  font-size: 1.5rem;
+  margin: 20px;
+  color: white;
 }
-.grey-warning{
-    color:grey;
+.grey-warning {
+  color: grey;
 }
 
 .image-link img {
-    height: auto;
-    width: 2.5rem;
-    border: none; /* Remove default border */
-    display: inline-block; /* Remove extra space below image */
-    cursor: pointer; /* Change cursor to pointer */
-   
-
+  height: auto;
+  width: 2.5rem;
+  border: none; /* Remove default border */
+  display: inline-block; /* Remove extra space below image */
+  cursor: pointer; /* Change cursor to pointer */
 }
 .image-link img:hover {
-    animation: shake 0.5s ease; /* Apply shake animation on hover */
-
+  animation: shake 0.5s ease; /* Apply shake animation on hover */
 }
 @keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-5px); }
-    100% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.kindaHidden {
+  color: #999393;
+  font-size: 0.5rem;
+}
+.light-reddish {
+  color: #d63447;
+}
+.randomize-text {
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: inline-block; /* Ensures the span behaves like text */
+}
+
+.randomize-text:hover {
+  color: #ff6b6b;
+}
+
+.randomize-text span {
+  display: inline-block;
+  width: 1ch;
+  text-align: center;
+}
+
+.randomize-text .space {
+  width: 0.5ch; /* Adjust space width */
+}
+
+.techgeek:hover{
+    color: gold;
+}
+.melophile:hover{
+    color: aqua;
+
+}
+.developer:hover{
+    color: rgb(153, 52, 255);
+
 }
